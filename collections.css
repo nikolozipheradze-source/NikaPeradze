@@ -1,0 +1,18 @@
+/* Layout rules used only by the three graphic design collection pages. */
+.collection-page .collection-grid { display:grid; gap:24px; padding-top:24px; padding-bottom:48px; align-items:start; }
+.collection-grid-2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.collection-grid-3 { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.collection-item { margin:0; min-width:0; }
+.collection-frame { background:transparent; }
+.collection-frame img { display:block; width:100%; height:auto; }
+.collection-item figcaption { margin-top:14px; font-size:16px; color:var(--muted); font-family:var(--font-label); }
+.collection-wide { padding-top:24px; padding-bottom:32px; }
+.collection-wide img { width:100%; height:auto; }
+.collection-portrait img { max-width:800px; margin-inline:auto; }
+.ticket-frame { height:clamp(560px,65vw,900px); }
+.ticket-frame img { width:100%; height:100%; object-fit:contain; }
+.collection-page .project-nav { margin-top:60px; }
+@media(max-width:900px) { .collection-grid-3 { grid-template-columns:1fr; } }
+@media(max-width:680px) { .collection-grid-2 { grid-template-columns:1fr; } .collection-page .collection-grid { gap:32px; } .ticket-frame { height:650px; max-height:85vh; } }
+
+.collection-page .project-intro h1 { font-size:clamp(42px,6.2vw,100px); }
